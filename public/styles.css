@@ -1,0 +1,167 @@
+:root {
+    --orange: coral;
+    --blue: cornflowerblue;
+    --bg: azure;
+  }
+  
+  /* Structure */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+  }
+  
+  .images{
+    max-width: 300px;
+    max-height: 200px;
+  }
+  .supply-box {
+    display:block;
+  }
+  
+  #main-header{
+      text-align: center;
+  }
+    
+  #row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .column {
+      width: calc(25% - 1px); /* 4 columns with no margin */
+      
+  }
+
+  .image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+  }
+  
+  .modal-image{
+    max-width: 300px;
+    max-height: 200px;
+    margin: 20px;
+  }
+  .cancel-save {
+    display: flex;
+    margin: 20px;
+
+  }
+  #cancel , #submit {
+    background-color: rgb(234, 142, 234);
+    border: 2px solid black;
+    margin-right: 10px;
+  }
+  #cancel:hover {
+    background: lightgray;
+  }
+  #submit:hover {
+    background: lightgray;
+  }
+  .custom-file-input:hover {
+    background: lightgray;
+  }
+  
+  .section2{
+    flex: 40%;
+    max-width: 30%;
+    margin: 20px;
+  }
+  form {
+    font-size: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  #img-prev-section {
+    max-width: 400px;
+    height:300px;
+    margin: 20px;
+    background: lightgray;
+  }
+
+  #img-prev {
+    padding: 2.5%;
+    display: block;
+    margin: auto;
+    max-width: 95%;
+  }
+
+  .custom-file-input {
+    font-size: 15px;
+    background-color: rgb(234, 142, 234);
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 20px;
+  }
+  
+  .hidden-file-input {
+    display: none;
+  }
+  #add:hover {
+    cursor: pointer;
+    background: lightgray;
+  }
+  #add-link {
+    font-size: 0.8em;
+    color: black;
+    border: 2px solid black;
+    padding: 0 4px;
+  }
+  
+  #edit-link {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+  }
+  
+  #delete-link {
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+  }
+  #img-prev {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .section3 {
+    max-width: 575px;
+  }
+  
+  /* larger resolution Responsive layout - makes a two column-layout instead of four columns */
+  @media (min-width: 700px) {
+    
+    .flex-section{
+      display:flex;
+    }
+    .section1{
+      display:flex;
+    }
+    .section2{
+      flex: 1;
+      max-width: 40%;
+    }
+    #crafts-section {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 700px) {
+    
+    
+    .modal-image{
+        max-width: 20%;
+        margin: 20px;
+      }
+  }

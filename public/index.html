@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Assignment 17</title>
+    
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Assignment 17 - Server Edit and Delete</h1>
+      <h2 id="add" >Buy and Sell Crafts &plus;</h2>
+    </header>
+    <main>
+      <div id="crafts-section">
+        <div id="row">
+
+        </div>
+      </div>
+      <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('dialog').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+              <section id="dialog-details">
+                <form id="add-craft-form" method="post" class="hidden">
+                    <input type="hidden" id="_id" name="_id">
+                    <section class="section1">
+                        <section3 class ="section3">
+                            <h2>Make Changes to your Craft</h2>
+                            <p>
+                                <label for="name ">Craft Name:</label>
+                                <input type="text" id="name" name="name" required minlength="3"/>
+                            </p>
+                            <p>
+                                <label for="description">Description:</label>
+                                <textarea type="text" id="description" name="description" required minlength="3"></textarea>
+                            </p>
+                            <p id="supplies-p ">
+                                <label class="inline">Supplies:</label>
+                                <a href="#" id="add-supply">Add Supply</a>
+                                <section id="supply-boxes"></section>
+                            </p>
+                        </section3>
+                        <section2 class="section2">
+                            <p id="img-prev-section">
+                                <img id="img-prev">
+                            </p>
+                            <p>
+                                <label for="img" class="custom-file-input">
+                                    Select an Image
+                                </label>
+                                <input type="file" id="img" name="img" accept="image/*" class="hidden-file-input"/>
+                            </p>
+                        </section2>
+                    </section>
+                    <section class="cancel-save">
+                        <p>
+                            <button id="cancel" type="cancel">Cancel</button>
+                        </p>
+                        <p>
+                            <button type="submit" id="submit">Submit</button>
+                        </p>
+                    </section>
+                </form>
+                <section id="craft-details" class="hidden">
+                    
+                </section>
+            </section>
+          </div>
+        </div>
+      </div> 
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
